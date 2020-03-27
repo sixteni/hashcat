@@ -1271,7 +1271,7 @@ bool generic_salt_decode (MAYBE_UNUSED const hashconfig_t *hashconfig, const u8 
 
 int generic_salt_encode (MAYBE_UNUSED const hashconfig_t *hashconfig, const u8 *in_buf, const int in_len, u8 *out_buf)
 {
-  u32 tmp_u32[(64 * 2) + 1] = { 0 };
+  u32 tmp_u32[(128 * 2) + 1] = { 0 };
 
   u8 *tmp_u8 = (u8 *) tmp_u32;
 
