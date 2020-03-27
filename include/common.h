@@ -114,7 +114,7 @@ but this is nededed for VS compiler which doesn't have inline keyword but has __
 #define PW_MAX_OLD          55
 
 #define SALT_MIN            0
-#define SALT_MAX            256
+#define SALT_MAX            512
 #define SALT_MAX_OLD        51
 
 #define HCBUFSIZ_TINY       0x1000
