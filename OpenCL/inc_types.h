@@ -1600,8 +1600,8 @@ typedef struct digest
 
 typedef struct salt
 {
-  u32 salt_buf[64];
-  u32 salt_buf_pc[64];
+  u32 salt_buf[128];
+  u32 salt_buf_pc[128];
 
   u32 salt_len;
   u32 salt_len_pc;

@@ -1182,7 +1182,7 @@ bool generic_salt_decode (MAYBE_UNUSED const hashconfig_t *hashconfig, const u8 
 
   u8 *tmp_u8 = (u8 *) tmp_u32;
 
-  if (in_len > 512) return false; // 512 = 2 * 256 -- (2 * because of hex), 256 because of maximum salt length in salt_t
+  if (in_len > 1024) return false; // 512 = 2 * 256 -- (2 * because of hex), 256 because of maximum salt length in salt_t
 
   int tmp_len = 0;
 
